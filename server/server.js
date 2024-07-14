@@ -1,22 +1,23 @@
 const express = require('express');
-const http = require('http');
-const socketIo = require('socket.io');
+const path = require("path");
 
 const app = express();
-const server = http.createServer(app);
-const io = socketIo(server);
+const server = require('http').createServer(app);
+const io = require('socket.io')(server);
 
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 
-io.on('connection', (socket) => {
-    console.log('New client connected');
-
-    socket.on('message', (message) => {
-        io.emit('message', message);
+io.on("connection", function(socket){
+    socket.on("newuser", function(username){
+        socket.broadcast.emit("update", username + " has joined the chat.");
     });
 
-    socket.on('disconnect', () => {
-        console.log('Client disconnected');
+    socket.on("exituser", function(username){
+        socket.broadcast.emit("update", username + " has left the chat.");
+    });
+
+    socket.on("chat", function(message){
+        socket.broadcast.emit("chat", message);
     });
 });
 
