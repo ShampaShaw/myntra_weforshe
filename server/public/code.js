@@ -4,6 +4,30 @@
 
     let uname;
 
+    // Define a variable to store the streak points
+let streakPoints = 0;
+
+// Function to update streak points display
+function updateStreakPoints(points) {
+    document.getElementById('streak-points').textContent = points;
+}
+
+// Function to handle increasing streak points
+function increaseStreakPoints() {
+    streakPoints++;
+    updateStreakPoints(streakPoints);
+}
+
+// Simulate regular logins (increase streak points)
+function simulateRegularLogin() {
+    setInterval(function() {
+        increaseStreakPoints();
+    }, 24 * 60 * 60 * 1000); // Increase points every 24 hours
+}
+
+// Call simulateRegularLogin to start increasing points (replace with actual logic)
+simulateRegularLogin();
+
     app.querySelector("#join").addEventListener("click", function(){
         let username = app.querySelector("#username").value;
         if(username.length == 0){
