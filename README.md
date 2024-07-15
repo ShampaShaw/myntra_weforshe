@@ -18,8 +18,8 @@ This is a combined application inspired by the Myntra app, featuring a chat room
 
 ## Features
 
-1.  **Community Room**: A place where users can exchange ideas about fashion and the latest trends.
-2. **Chatbot**: A fashion-related chatbot that provides the best possible answers using AI/ML.
+1. **Community Room**: A place where users can exchange ideas about fashion and the latest trends.
+2. **Chatbot**: A fashion-related chatbot that provides personalized tips, outfit recommendations, and can emulate your favorite fashion icons.
 3. **Streaks and Rewards**: Users are rewarded with discount coupons and gifts for regular logins. The streak count increases by 1 for each regular login, and rewards are given after completing a streak of a certain period set by Myntra.
 4. **Fashion Show Competition**: A page where different competitions are organized. Users can register, upload videos or images showcasing their talent, and judges can view entries and choose winners.
 
