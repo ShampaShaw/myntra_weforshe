@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Fashion Show</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Myntra</div>
+        <button onclick="window.location.href='index.html'">Home</button>
+        <button onclick="window.location.href='chat-room.html'">Chat Room</button>
+        <button onclick="window.location.href='rewards.html'">Rewards</button>
+        <button onclick="window.location.href='streak.html'">Streak</button>
+    </div>
+
+    <div class="competition-container">
+        <h2>Fashion Show Competitions</h2>
+        <button class="competition-button" data-competition="fashion-videos">Fashion Videos</button>
+        <button class="competition-button" data-competition="fashion-images">Fashion Images</button>
+    </div>
+
+    <div id="registration-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Register for Competition</h2>
+            <form id="registration-form">
+                <input type="file" id="upload-file" name="upload-file" accept="image/*,video/*">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="fashion-show.js"></script>
+</body>
+</html>

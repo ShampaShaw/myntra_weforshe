@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Myntra App</title>
+    <title>Chat Room</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -11,15 +11,16 @@
 <body>
     <div class="navbar">
         <div class="logo">Myntra</div>
-        <button id="chat-room">Chat Room</button>
-        <button id="rewards">Rewards</button>
-        <button id="streak">Streak</button>
+        <button onclick="window.location.href='index.html'">Home</button>
+        <button onclick="window.location.href='fashion-show.html'">Fashion Show</button>
+        <button onclick="window.location.href='rewards.html'">Rewards</button>
+        <button onclick="window.location.href='streak.html'">Streak</button>
     </div>
 
     <div class="app">
         <div class="screen join-screen active">
             <div class="form">
-                <h2>Welcome to Myntra App</h2>
+                <h2>Chat Room</h2>
                 <div class="form-input">
                     <label for="username">Username</label>
                     <input type="text" id="username" name="username">
@@ -43,13 +44,7 @@
         </div>
     </div>
 
-    <div class="bottom-buttons">
-        <button id="ask-chatbot">Ask Chatbot</button>
-        <button id="fashion-show">Fashion Show</button>
-    </div>
-
     <script type="text/javascript" src="socket.io/socket.io.js"></script>
     <script type="text/javascript" src="code.js"></script>
-    <script type="text/javascript" src="fashion.js"></script>
 </body>
 </html>
