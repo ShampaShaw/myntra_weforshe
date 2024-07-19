@@ -6,6 +6,7 @@ This is a combined application inspired by the Myntra app, featuring a chat room
 
 ### Files
 
+- `BennettUniversity_ByteBusters.ppt`: This is the new presentation (refer to this, not the uploaded one on competition page)
 - `server.js`: The main server file that sets up the Express application, initializes Socket.io, and handles socket events.
 - `public/code.js`: The client-side JavaScript file that handles user interactions and socket events.
 - `public/index.html`: The HTML file that defines the structure of the main application page.
